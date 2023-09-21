@@ -1,0 +1,22 @@
+body {
+    background-color: burlywood;
+}
+/* applies to all of type */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* aplllies to what you specify */
+#first {
+    color: purple;
+    font-style: italic;
+    font-weight: 700;
+}
+@media screen and (min-width 700px) {
+ .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+}
