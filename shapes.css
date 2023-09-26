@@ -1,0 +1,40 @@
+body{
+    margin:100px;
+}
+
+#rectangle{
+    height: 100px;
+    width: 200px;
+    border:solid 3px black;
+    background-color: white;
+}   
+
+#triangle{
+    height: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid transparent red;
+}
+
+#circle {
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+#oval {
+    width: 160px;
+    height: 80px;
+    background: seagreen;
+    border-radius: 50%;
+  }
+
+#square {
+    height: 100px;
+    width: 100px;
+    border: solid 3px black;
+    background-color: purple;
+}
