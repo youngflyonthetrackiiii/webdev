@@ -1,0 +1,66 @@
+header {
+    background-color: purple;
+    height: 20vh;
+    margin: 10px;
+    animation-name:color-swap ;
+    animation-duration:7s ;
+    animation-iteration-count: infinite;
+}
+
+nav > div {
+    background-color: skyblue;
+    height: 50px;
+    margin: 10px;
+}
+
+aside {
+    background-color: royalblue;
+    height: 50vh;
+    margin: 10px;
+}
+
+
+footer {
+    background-color: blue;
+    height: 10vh;
+    margin: 10px;
+}
+
+@keyframes color-swap {
+    0%
+    {background-color:  purple;}
+    25%
+     {background-color: orange;}
+     50% {
+        background-color: green;
+     }
+     75% {
+        background-color: blue;
+     }
+     100%  {
+        background-color: purple;
+     }
+
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        height: 15vh;
+    }
+    
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    nav > div {
+        height: 25px;
+        width: 100px;
+    }
+
+    aside {
+        width: 20vw;
+    }
+}
