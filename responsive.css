@@ -24,6 +24,9 @@ footer {
     background-color: blue;
     height: 10vh;
     margin: 10px;
+    animation-name: shape-swap;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes color-swap {
@@ -63,4 +66,18 @@ footer {
     aside {
         width: 20vw;
     }
+}
+
+@keyframes shape-swap {
+  0%
+  {width: 759px;}
+  50%
+  {width: 429.5px;}
+  100%
+  {width: 1px;}
+
+
+
+
+
 }

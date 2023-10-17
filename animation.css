@@ -1,66 +1,40 @@
-header {
-    background-color: purple;
-    height: 20vh;
-    margin: 10px;
-    animation-name:color-swap ;
-    animation-duration:7s ;
+body{
+    background-color: lightblue;
+    margin: 200px;
+}
+
+#a1{
+    display: grid;
+    height: 300px;
+    width: 400px;
+    background-color:seagreen;
+    animation-name: shape-grow;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
-nav > div {
-    background-color: skyblue;
-    height: 50px;
-    margin: 10px;
-}
-
-aside {
-    background-color: royalblue;
-    height: 50vh;
-    margin: 10px;
-}
-
-
-footer {
-    background-color: blue;
-    height: 10vh;
-    margin: 10px;
-}
-
-@keyframes color-swap {
+@keyframes shape-grow {
     0%
-    {background-color:  purple;}
+    {height: 300px;}
     25%
-     {background-color: orange;}
-     50% {
-        background-color: green;
-     }
-     75% {
-        background-color: blue;
-     }
-     100%  {
-        background-color: purple;
-     }
-
+    {height: 400px;}
 }
 
-@media screen and (min-width: 992px) {
-    header {
-        height: 15vh;
-    }
-    
-    #content {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+#a2{
+    display: grid;
+    height: 300px;
+    width: 400px;
+    background-color: darkblue;
+    animation-name: shape-shrink;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    margin-top: 20px;
+}
 
-    nav > div {
-        height: 25px;
-        width: 100px;
-    }
 
-    aside {
-        width: 20vw;
-    }
+@keyframes shape-shrink{
+    0%
+    {height: 300px;}
+    25%
+    {height: 150px;}
 }
