@@ -30,8 +30,19 @@ document.getElementById("blur").addEventListener("blur", function () {
 });
 
 document.getElementById("copy").addEventListener("copy", function () {
-    function myFunction() {
-    document.getElementById("demo").innerHTML = "You copied text!"
+    document.getElementById("copy").innerHTML = "you copied me";
+});
+
+document.getElementById("paste").addEventListener("paste", function () {
+    document.getElementById("copy").innerHTML = "you pasted me";
+});
+
+document.getElementById("cut").addEventListener("cut", function () {
+    document.getElementById("cut").innerHTML = "ahhhhhhhh :o!";
+});
+
+document.getElementById("fav-food").addEventListener("change", function () {
+    document.getElementById("select").innerHTML = `you have chosen ${document.getElementById("fav-food").value}`;
 });
 
 
